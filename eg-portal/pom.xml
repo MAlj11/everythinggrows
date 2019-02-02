@@ -26,6 +26,7 @@
     <jedis.version>2.9.0</jedis.version>
     <curator-framework.version>2.12.0</curator-framework.version>
     <spring.version>4.3.16.RELEASE</spring.version>
+    <slf4j.version>1.7.21</slf4j.version>
   </properties>
 
   <dependencyManagement>
@@ -128,39 +129,7 @@
     </dependencies>
   </dependencyManagement>
 
-
-  <distributionManagement>
-    <repository>
-      <id>aws-release</id>
-      <name>AWS Release Repository</name>
-      <url>s3://meme-maven/release</url>
-    </repository>
-    <snapshotRepository>
-      <id>aws-snapshot</id>
-      <name>AWS Snapshot Repository</name>
-      <url>s3://meme-maven/snapshot</url>
-    </snapshotRepository>
-  </distributionManagement>
-  <repositories>
-    <repository>
-      <id>aws-release</id>
-      <name>AWS Release Repository</name>
-      <url>s3://meme-maven/release</url>
-    </repository>
-    <repository>
-      <id>aws-snapshot</id>
-      <name>AWS Snapshot Repository</name>
-      <url>s3://meme-maven/snapshot</url>
-    </repository>
-  </repositories>
   <build>
-    <extensions>
-      <extension>
-        <groupId>org.kuali.maven.wagons</groupId>
-        <artifactId>maven-s3-wagon</artifactId>
-        <version>1.2.1</version>
-      </extension>
-    </extensions>
     <plugins>
 
 
