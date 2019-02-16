@@ -18,8 +18,8 @@
 <nav id="menu">
 	<ul class="links">
 		<li><a href="/index.html">首页</a></li>
-		<li><a href="/register.html">注册</a></li>
-		<li><a href="/login.html">登陆</a></li>
+		<li><a href="/registerPage.html">注册</a></li>
+		<li><a href="/loginPage.html">登陆</a></li>
 	</ul>
 </nav>
 

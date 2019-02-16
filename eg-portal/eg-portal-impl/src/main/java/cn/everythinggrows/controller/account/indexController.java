@@ -21,4 +21,15 @@ public class indexController {
     public String getInsexx(){
         return "lw-index";
     }
+
+
+    @RequestMapping(value = "/registerPage.html")
+    public String getRegisterPage(){
+        return "lw-re";
+    }
+
+    @RequestMapping(value = "/loginPage.html")
+    public String getLoginPage(){
+        return "lw-log";
+    }
 }
