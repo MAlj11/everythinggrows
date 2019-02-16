@@ -3,7 +3,10 @@ package cn.everythinggrows.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.JedisCluster;
 
-public class idGeneration {
+/**
+ * @author MA
+ */
+public class idGeneration{
     public static String EG_UID_PREFIX = "eg/uid/generation";
     @Autowired
     private static JedisCluster jedisCluster;

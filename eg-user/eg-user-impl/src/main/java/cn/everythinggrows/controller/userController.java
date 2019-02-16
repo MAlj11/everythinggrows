@@ -24,7 +24,7 @@ public class userController {
 
     private Logger logger = LoggerFactory.getLogger(userController.class);
 
-    @RequestMapping(value = "/register",method = RequestMethod.POST)
+    @RequestMapping(value = "/user/register",method = RequestMethod.POST)
     public egResponse Register(@Context HttpServletRequest request){
        String email = request.getParameter("email");
        String password = request.getParameter("password");
@@ -35,4 +35,5 @@ public class userController {
        egResponse ret = userService.createUser(user,verify);
        return ret;
        }
+
 }

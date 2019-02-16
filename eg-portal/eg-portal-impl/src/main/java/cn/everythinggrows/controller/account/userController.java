@@ -2,19 +2,32 @@ package cn.everythinggrows.controller.account;
 
 
 import cn.everythinggrows.Utils.HttpClientUtil;
+import cn.everythinggrows.Utils.egResponse;
+import cn.everythinggrows.service.emailVerifyService;
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import redis.clients.jedis.JedisCluster;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.core.Context;
 import java.util.HashMap;
 
 @Controller
 public class userController {
+    public static String EMAIL_VERIFY_KEY = "eg/email/verify/key";
+
+    @Autowired
+    private emailVerifyService emailVerifyService;
+
+    @Autowired
+    private JedisCluster jedisCluster;
 
     private Logger logger = LoggerFactory.getLogger(userController.class);
     @RequestMapping(value = "/register.html", method = RequestMethod.POST)
@@ -47,5 +60,14 @@ public class userController {
         String ret = HttpClientUtil.doPost(url,logParams);
         logger.info(">>>>>>>>>>>>>>>log result:{}>>>>>>>>>>>>>>>>>>",ret);
         return "lw-index";
+    }
+
+    @RequestMapping(value = "/emailVerify.html",method = RequestMethod.POST)
+    @ResponseBody
+    public egResponse getVerify(@Context HttpServletRequest request) throws MessagingException {
+        String reEmail = request.getParameter("reEmail");
+        String verify = emailVerifyService.getMailVerifyAndSend(reEmail);
+        jedisCluster.setex(EMAIL_VERIFY_KEY+reEmail,5*60,verify);
+        return egResponse.OK;
     }
 }

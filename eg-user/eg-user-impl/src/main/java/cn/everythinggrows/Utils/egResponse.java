@@ -7,6 +7,7 @@ public class egResponse {
     public static final egResponse FORBIDDEN = error(403,"Insufficient privilage for action");
     public static final egResponse BAD_REQUSET = error(400,"bad request");
     public static final egResponse BAD_CODE = error(400,"vercity code not match");
+    public static final egResponse SYSTEM_ERROR = error(401,"system error");
     public static final egResponse OK = new egResponse();
 
     public int errorCode;

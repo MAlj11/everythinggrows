@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    http://www.springframework.org/schema/beans/spring-beans.xsd ">
 
     <!-- 数据库连接池 -->
     <bean id="defaultDataSourceConfig" class="com.jolbox.bonecp.BoneCPDataSource" abstract="true">
@@ -61,6 +61,9 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dynamicDataSource"/>
         <property name="configLocation" value="classpath:mybatis/SqlMapperConfig.xml"/>
+    </bean>
+    <bean id="userSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
     <bean id="dynamicDataSource" class="cn.everythinggrows.datasource.DynamicDateSource">
         <property name="targetDataSources">

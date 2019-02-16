@@ -87,11 +87,9 @@
     function sendMessage() {
         //向后台发送处理数据
         $.ajax({
-            type: "get", //用GET方式传输
+            type: "post", //用GET方式传输
             dataType: "json", //数据格式:JSON
-            url: '/
-
-            /sendauth?mobile=' + $('#forget_mobile').val(), //目标地址
+            url: '/emailVerify.html', //目标地址
         success: function (data) {
             //console.log(data);
             if(data.code==true){

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="userCreateAt">
+    <resultMap id="ResultMap" type="cn.everythinggrows.model.egUser">
+        <id column="uid" property="uid" jdbcType="BIGINT"/>
+        <result column="createAt" property="createAt" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="insertUserCreateAt" parameterType="java.util.Map">
+        INSERT INTO
+        ${tableName}
+        {
+        uid,createAt
+        }
+        VALUES
+        {
+        #{uid,jdbcType=BIGINT}
+        #{createAt,jdbcType=INTEGER}
+        }
+    </insert>
+</mapper>
