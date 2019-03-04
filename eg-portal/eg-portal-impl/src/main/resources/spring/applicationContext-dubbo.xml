@@ -18,6 +18,7 @@
 
 
     <!--引用的服务 -->
+    <dubbo:reference id="UserAccountImpl" check="false" interface="cn.everythinggrows.user.userAccount"/>
 
     <!--发布的服务-->
 

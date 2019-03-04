@@ -9,17 +9,17 @@
        http://code.alibabatech.com/schema/dubbo
       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="eg-portal"/>
+    <dubbo:application name="eg-user"/>
     <dubbo:protocol name="dubbo" port="${dubbo.protocol.port}"/>
     <dubbo:registry address="${dubbo.registry.address}"/>
 
     <dubbo:annotation package="cn.everythinggrows"/>
 
-
-
     <!--引用的服务 -->
 
+
     <!--发布的服务-->
+    <dubbo:service interface="cn.everythinggrows.user.userAccount" ref="UserAccountImpl"/>
 
 
 

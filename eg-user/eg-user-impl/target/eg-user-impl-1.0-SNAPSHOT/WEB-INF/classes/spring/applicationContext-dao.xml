@@ -65,7 +65,7 @@
     <bean id="userSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
-    <bean id="dynamicDataSource" class="cn.everythinggrows.datasource.DynamicDateSource">
+    <bean id="dynamicDataSource" class="cn.everythinggrows.user.datasource.DynamicDateSource">
         <property name="targetDataSources">
             <map key-type="java.lang.Integer">
                 <entry key="0" value-ref="dataSourceR0"/>
