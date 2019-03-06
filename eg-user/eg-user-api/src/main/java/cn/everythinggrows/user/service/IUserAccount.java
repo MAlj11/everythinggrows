@@ -7,8 +7,8 @@ import cn.everythinggrows.user.model.egUser;
 public interface IUserAccount {
     public String getMailVerifyAndSend(String toMail);
 
-    public egResponse ICreateUser(egUser user,String vertify);
+    public String ICreateUser(egUser user,String vertify);
 
-    public egResponse login(egUser user);
+    public String login(egUser user);
 }
 

@@ -2,10 +2,10 @@ package cn.everythinggrows.portal.controller.account;
 
 
 import cn.everythinggrows.portal.Utils.egResponse;
-import cn.everythinggrows.portal.Utils.HttpClientUtil;
 import cn.everythinggrows.portal.service.emailVerifyService;
 import cn.everythinggrows.user.model.egUser;
 import cn.everythinggrows.user.service.IUserAccount;
+import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,13 +22,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.ws.rs.core.Context;
 import java.util.HashMap;
+import java.util.Map;
 
+/**
+ *
+ */
 @Controller
 public class userController {
     public static final String EMAIL_VERIFY = "eg/email/verify/";
-
-    @Autowired
-    private emailVerifyService emailVerifyService;
 
     @Autowired
     private JedisCluster jedisCluster;
@@ -40,6 +41,7 @@ public class userController {
     private Logger logger = LoggerFactory.getLogger(userController.class);
 
     @RequestMapping(value = "/emailVerify.html", method = RequestMethod.GET)
+    @ResponseBody
     public egResponse getEmailVerify(@RequestParam String reEmail){
         if(reEmail == null){
             return egResponse.error(10002,"email is null");
@@ -48,8 +50,8 @@ public class userController {
         return egResponse.OK;
     }
 
-
     @RequestMapping(value = "/register.html", method = RequestMethod.POST)
+
     public String Register(@Context HttpServletRequest request){
 
         String reEmail = request.getParameter("reEmail");
@@ -62,12 +64,12 @@ public class userController {
         user.setUsername(reEmail);
 
         HttpSession session = request.getSession();
-        cn.everythinggrows.user.Utils.egResponse ret = userAccount.ICreateUser(user,reVerify);
-        if(ret.errorCode == 10002){
+        String ret = userAccount.ICreateUser(user,reVerify);
+        if(ret.equals("10002")){
             session.setAttribute("error","您的验证码有误");
             return "error.vm";
         }
-        session.setAttribute("token",egResponse.data("token"));
+        session.setAttribute("token",ret);
         return "lw-index.vm";
     }
 
@@ -81,11 +83,13 @@ public class userController {
         egUser user = new egUser();
         user.setEmail(loEmail);
         user.setPassword(loPassword);
-        cn.everythinggrows.user.Utils.egResponse ret = userAccount.login(user);
-        if(ret.errorCode == 100001){
+        String ret = userAccount.login(user);
+        if(ret.equals("100001")){
             session.setAttribute("error","您的密码有误");
             return "error.vm";
         }
+        session.setAttribute("token",ret);
+        session.setAttribute("username", user.getUsername());
         return "lw-index";
     }
 

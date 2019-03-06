@@ -27,7 +27,7 @@
 <header class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
     <div class="am-u-sm-8 am-u-sm-centered">
         <img width="200" src="assets/i/logo.jpg"/>
-        <h2 class="am-hide-sm-only">万物生长</h2>
+        <h2 class="am-hide-sm-only">枝丫</h2>
     </div>
 </header>
 <hr>
@@ -42,6 +42,29 @@
       <li><a href="/detail/hulianwang">互联网      </a></li>
       <li><a href="/detail/yingyin">影音      </a></li>
       <li><a href="/detail/ganwu">感悟      </a></li>
+        <li><a href="/detail/ganwu">      </a></li>
+        <li><a href="/detail/ganwu">     </a></li>
+        <li><a href="/detail/ganwu">      </a></li>
+        #if( $username )
+          <li class="am-active">
+              <a href="/myArticle.html" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">我的文章</a>
+          </li>
+          <li class="am-active">
+              <a href="/member.html" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">个人中心</a>
+          </li>
+          <li class="am-active">
+              <a href="/logout.html" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">注销</a>
+          </li>
+
+      #else
+          <li class="am-active">
+              <a href="/loginPage.html" class="layout-user-downmenu-link">立即登录</a>
+          </li>
+          <li class="am-active">
+              <a href="/registerPage.html" target="_blank" class="layout-user-downmenu-link"
+                 data-mtype="wmz_public_grzx_register">立即注册</a>
+          </li>
+      #end
     </ul>
     <form class="am-topbar-form am-topbar-right am-form-inline" role="search">
       <div class="am-form-group">

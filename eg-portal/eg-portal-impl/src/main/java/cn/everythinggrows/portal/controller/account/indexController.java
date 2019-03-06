@@ -7,21 +7,23 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ * @author MA
+ */
 @Controller
 public class indexController {
   private Logger logger = LoggerFactory.getLogger(indexController.class);
 
-    @RequestMapping(value = "/sindex.html",method = RequestMethod.GET)
+    @RequestMapping("/sindex.html")
     public String getIndex(){
         logger.info("__________________________________________进入sindex");
         return "sindex";
     }
 
-    @RequestMapping(value = "/index.html")
+    @RequestMapping("/index.html")
     public String getInsexx(){
         logger.info("--------------------------------------------------creating");
-//        return "lw-index";
-        return "creating";
+        return "lw-index";
     }
 
 

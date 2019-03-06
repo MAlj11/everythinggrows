@@ -42,6 +42,29 @@
       <li><a href="/detail/hulianwang">互联网      </a></li>
       <li><a href="/detail/yingyin">影音      </a></li>
       <li><a href="/detail/ganwu">感悟      </a></li>
+        <li><a href="/detail/ganwu">      </a></li>
+        <li><a href="/detail/ganwu">     </a></li>
+        <li><a href="/detail/ganwu">      </a></li>
+        #if( $username )
+          <li class="am-active">
+              <a href="/myArticle.html" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">我的文章</a>
+          </li>
+          <li class="am-active">
+              <a href="/member.html" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">个人中心</a>
+          </li>
+          <li class="am-active">
+              <a href="/logout.html" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">注销</a>
+          </li>
+
+      #else
+          <li class="am-active">
+              <a href="/loginPage.html" class="layout-user-downmenu-link">立即登录</a>
+          </li>
+          <li class="am-active">
+              <a href="/registerPage.html" target="_blank" class="layout-user-downmenu-link"
+                 data-mtype="wmz_public_grzx_register">立即注册</a>
+          </li>
+      #end
     </ul>
     <form class="am-topbar-form am-topbar-right am-form-inline" role="search">
       <div class="am-form-group">
@@ -268,18 +291,18 @@
   <footer class="blog-footer">
     <div class="am-g am-g-fixed blog-fixed am-u-sm-centered blog-footer-padding">
         <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
-            <h3>关于<万物生长></h3>
-            <p class="am-text-sm"><万物生长>包含着很多你喜欢的内容，我们希望每一个来到<万物生长>的朋友都会有所收获。</p>
+            <h3>关于<枝丫></h3>
+            <p class="am-text-sm"><万物生长>包含着很多你喜欢的内容，我们希望每一个来到<枝丫>的朋友都会有所收获。</p>
         </div>
         <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
             </p>
-            <p>我们追求卓越，然时间、经验、能力有限。<万物生长>有很多不足的地方，希望大家包容、不吝赐教，给我们提意见、建议。感谢你们！</p>          
+            <p>我们追求卓越，然时间、经验、能力有限。<枝丫>有很多不足的地方，希望大家包容、不吝赐教，给我们提意见、建议。感谢你们！</p>
         </div>
         <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
              
         </div>
     </div>    
-    <div class="blog-text-center"><万物生长></div>    
+    <div class="blog-text-center"><枝丫></div>
   </footer>
 
 

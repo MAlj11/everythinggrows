@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://code.alibabatech.com/schema/dubbo
+      http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="eg-user"/>
+    <dubbo:protocol name="dubbo" port="${dubbo.protocol.port}"/>
+    <dubbo:registry address="${dubbo.registry.address}"/>
+
+    <dubbo:annotation package="cn.everythinggrows"/>
+
+    <!--引用的服务 -->
+
+
+    <!--发布的服务-->
+    <bean id="IUserAccount" class="cn.everythinggrows.user.service.UserAccountImpl"/>
+    <dubbo:service interface="cn.everythinggrows.user.service.IUserAccount" ref="IUserAccount"/>
+
+
+
+    <!--&lt;!&ndash; service implementation, as same as regular local bean &ndash;&gt;-->
+    <!--<bean id="demoService" class="org.apache.dubbo.demo.provider.DemoServiceImpl"/>-->
+
+    <!--&lt;!&ndash; declare the service interface to be exported &ndash;&gt;-->
+    <!--<dubbo:service interface="org.apache.dubbo.demo.DemoService" ref="demoService"/>-->
+
+
+
+    <dubbo:consumer check="false"/>
+
+</beans>

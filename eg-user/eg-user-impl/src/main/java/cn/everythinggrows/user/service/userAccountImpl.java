@@ -88,7 +88,7 @@ public class UserAccountImpl implements IUserAccount {
     }
 
     @Override
-    public egResponse ICreateUser(egUser user, String verfity) {
+    public String ICreateUser(egUser user, String verfity) {
         long uid = idGeneration.uidGeneration();
         if(UserUtils.isOffcialUid(uid)){
             uid = idGeneration.uidGeneration();
@@ -101,7 +101,7 @@ public class UserAccountImpl implements IUserAccount {
             redisVerify = "";
         }
         if(!redisVerify.equals(verfity)){
-            return egResponse.error(10002,"vertify");
+            return "10002";
         }
         int hashEmail = user.getEmail().hashCode();
         emailUid emailUid = new emailUid();
@@ -113,15 +113,15 @@ public class UserAccountImpl implements IUserAccount {
         int j = createAtDao.insertCreateAt(user.getUid(),time);
         int m = emailToUidDao.insertEmailUid(emailUid);
         if(i > 0 && j > 0 && m > 0){
-            egResponse loRet = login(user);
+            String loRet = login(user);
             return loRet;
         }else {
-            return egResponse.error(10003,"system error");
+            return "10003";
         }
     }
 
     @Override
-    public egResponse login(egUser user) {
+    public String login(egUser user) {
         Long uid = user.getUid();
         if(uid == null || uid.equals(0L)){
             String email = user.getEmail();
@@ -132,15 +132,13 @@ public class UserAccountImpl implements IUserAccount {
         egUser user1 = userDao.selectEgUser(uid);
         String password = user1.getPassword();
         if(!password.equals(user.getPassword())){
-            return egResponse.error(100001,"password is error");
+            return "100001";
         }
         String uuid = UUID.randomUUID().toString().replaceAll("-", "");
         String token = String.valueOf(uid) + ";" + uuid;
         String key = UID_TOKEN + user1.getEmail();
         jedisCluster.setex(key,7*24*60*60,token);
-        Map<String,Object> ret = Maps.newHashMap();
-        ret.put("token",token);
-        return new egResponse(ret);
+        return token;
     }
 
     public String getRandomPortrait(){
