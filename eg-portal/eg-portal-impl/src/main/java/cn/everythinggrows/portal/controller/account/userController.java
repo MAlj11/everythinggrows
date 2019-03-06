@@ -4,6 +4,8 @@ package cn.everythinggrows.portal.controller.account;
 import cn.everythinggrows.portal.Utils.egResponse;
 import cn.everythinggrows.portal.Utils.HttpClientUtil;
 import cn.everythinggrows.portal.service.emailVerifyService;
+import cn.everythinggrows.user.model.egUser;
+import cn.everythinggrows.user.service.IUserAccount;
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,17 +13,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import redis.clients.jedis.JedisCluster;
 
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.core.Context;
 import java.util.HashMap;
 
 @Controller
 public class userController {
-    public static String EMAIL_VERIFY_KEY = "eg/email/verify/key";
+    public static final String EMAIL_VERIFY = "eg/email/verify/";
 
     @Autowired
     private emailVerifyService emailVerifyService;
@@ -29,10 +33,22 @@ public class userController {
     @Autowired
     private JedisCluster jedisCluster;
 
-
+    @Autowired
+    private IUserAccount userAccount;
 
 
     private Logger logger = LoggerFactory.getLogger(userController.class);
+
+    @RequestMapping(value = "/emailVerify.html", method = RequestMethod.GET)
+    public egResponse getEmailVerify(@RequestParam String reEmail){
+        if(reEmail == null){
+            return egResponse.error(10002,"email is null");
+        }
+        String verify = userAccount.getMailVerifyAndSend(reEmail);
+        return egResponse.OK;
+    }
+
+
     @RequestMapping(value = "/register.html", method = RequestMethod.POST)
     public String Register(@Context HttpServletRequest request){
 
@@ -40,40 +56,37 @@ public class userController {
         String rePassword = request.getParameter("rePassword");
         String reVerify = request.getParameter( "reVerify" );
 
+        egUser user = new egUser();
+        user.setEmail(reEmail);
+        user.setPassword(rePassword);
+        user.setUsername(reEmail);
 
-//        String url = "http://localhost:8081/user/register";
-//        HashMap<String,String> registerParams = Maps.newHashMap();
-//        registerParams.put("email",reEmail);
-//        registerParams.put("password",rePassword);
-//        registerParams.put("verify",reVerify);
-//        String ret = HttpClientUtil.doPost(url,registerParams);
-//        logger.info(">>>>>>>>>>>>>>>register result:{}>>>>>>>>>>>>>>>>>>",ret);
-
-
-        return "lw-log";
+        HttpSession session = request.getSession();
+        cn.everythinggrows.user.Utils.egResponse ret = userAccount.ICreateUser(user,reVerify);
+        if(ret.errorCode == 10002){
+            session.setAttribute("error","您的验证码有误");
+            return "error.vm";
+        }
+        session.setAttribute("token",egResponse.data("token"));
+        return "lw-index.vm";
     }
 
 
     @RequestMapping(value = "/login.html", method = RequestMethod.POST)
     public  String Login(@Context HttpServletRequest request){
+        HttpSession session = request.getSession();
         String loEmail = request.getParameter("doc-vld-email-2-1");
         String loPassword = request.getParameter("passwordLog");
 
-        String url = "http://localhost:8081/user/login";
-        HashMap<String,String> logParams = Maps.newHashMap();
-        logParams.put("email",loEmail);
-        logParams.put("password",loPassword);
-        String ret = HttpClientUtil.doPost(url,logParams);
-        logger.info(">>>>>>>>>>>>>>>log result:{}>>>>>>>>>>>>>>>>>>",ret);
+        egUser user = new egUser();
+        user.setEmail(loEmail);
+        user.setPassword(loPassword);
+        cn.everythinggrows.user.Utils.egResponse ret = userAccount.login(user);
+        if(ret.errorCode == 100001){
+            session.setAttribute("error","您的密码有误");
+            return "error.vm";
+        }
         return "lw-index";
     }
 
-    @RequestMapping(value = "/emailVerify.html",method = RequestMethod.POST)
-    @ResponseBody
-    public egResponse getVerify(@Context HttpServletRequest request) throws MessagingException {
-        String reEmail = request.getParameter("reEmail");
-        String verify = emailVerifyService.getMailVerifyAndSend(reEmail);
-        jedisCluster.setex(EMAIL_VERIFY_KEY+reEmail,5*60,verify);
-        return egResponse.OK;
-    }
 }

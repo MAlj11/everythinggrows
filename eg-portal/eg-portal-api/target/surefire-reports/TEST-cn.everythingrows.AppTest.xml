@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cn.everythingrows.AppTest" time="0.043" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cn.everythingrows.AppTest" time="0.05" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.class.path" value="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\test-classes;I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\classes;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\junit\junit\4.11\junit-4.11.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\test-classes;I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\classes;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\log4j\log4j\1.2.17\log4j-1.2.17.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\jline\jline\0.9.94\jline-0.9.94.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\junit\junit\4.11\junit-4.11.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\MA\AppData\Local\Temp\surefire8174220081809955481\surefirebooter1347026200797589304.jar C:\Users\MA\AppData\Local\Temp\surefire8174220081809955481 2019-03-04T16-49-16_195-jvmRun1 surefire6099140025286851317tmp surefire_06360476268414582839tmp"/>
-    <property name="surefire.test.class.path" value="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\test-classes;I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\classes;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\junit\junit\4.11\junit-4.11.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.java.command" value="C:\Users\MA\AppData\Local\Temp\surefire6274155432045721709\surefirebooter8623476307103779066.jar C:\Users\MA\AppData\Local\Temp\surefire6274155432045721709 2019-03-05T18-06-40_975-jvmRun1 surefire4946392612577810326tmp surefire_08495932028064942440tmp"/>
+    <property name="surefire.test.class.path" value="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\test-classes;I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-api\target\classes;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\org\apache\zookeeper\zookeeper\3.3.3\zookeeper-3.3.3.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\log4j\log4j\1.2.17\log4j-1.2.17.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\jline\jline\0.9.94\jline-0.9.94.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\junit\junit\4.11\junit-4.11.jar;I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\MA"/>
     <property name="user.language" value="zh"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\MA\AppData\Local\Temp\surefire8174220081809955481\surefirebooter1347026200797589304.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\MA\AppData\Local\Temp\surefire6274155432045721709\surefirebooter8623476307103779066.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,5 +62,5 @@
     <property name="maven.repo.local" value="I:\apps\applications\apache-maven-3.5.3\apache-maven-3.5.3"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="cn.everythingrows.AppTest" time="0.003"/>
+  <testcase name="shouldAnswerWithTrue" classname="cn.everythingrows.AppTest" time="0.004"/>
 </testsuite>

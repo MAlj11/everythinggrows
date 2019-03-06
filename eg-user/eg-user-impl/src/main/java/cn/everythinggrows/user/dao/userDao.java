@@ -5,6 +5,8 @@ import cn.everythinggrows.user.Utils.DBUtils;
 import cn.everythinggrows.user.Utils.beanUtils;
 import cn.everythinggrows.user.datasource.DBContextHolder;
 import cn.everythinggrows.user.model.egUser;
+import cn.everythinggrows.user.model.emailUid;
+import com.google.common.collect.Maps;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -26,4 +28,15 @@ public class userDao {
         DBContextHolder.clearDBKey();
         return i;
         }
+
+    public egUser selectEgUser(long uid){
+        Map<String,Object> dataMap = Maps.newHashMap();
+        dataMap.put("tableName","eg_user_" + DBUtils.getTableKey(uid));
+        dataMap.put("uid",uid);
+        int dbKey = DBUtils.getDBKey(uid);
+        DBContextHolder.setDBKey((long)dbKey);
+        egUser user = userSqlSession.selectOne("userDao.selectUser",dataMap);
+        return user;
+    }
+
 }

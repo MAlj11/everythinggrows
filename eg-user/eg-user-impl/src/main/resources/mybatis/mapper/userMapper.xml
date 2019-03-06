@@ -24,4 +24,12 @@
         #{portrait,jdbcType=VARCHAR}
         }
     </insert>
+
+    <select id="selectUser" parameterType="java.util.Map" resultMap="ResultMap">
+        SELECT
+        uid,username,password,email,portrait
+        FROM
+        ${tableName}
+        WHERE uid=${uid}
+    </select>
 </mapper>

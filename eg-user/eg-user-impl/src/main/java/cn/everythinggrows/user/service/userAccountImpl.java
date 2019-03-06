@@ -1,12 +1,152 @@
 package cn.everythinggrows.user.service;
 
-import cn.everythinggrows.user.userAccount;
+import cn.everythinggrows.user.Utils.UserUtils;
+import cn.everythinggrows.user.Utils.egResponse;
+import cn.everythinggrows.user.Utils.idGeneration;
+import cn.everythinggrows.user.dao.createAtDao;
+import cn.everythinggrows.user.dao.emailToUidDao;
+import cn.everythinggrows.user.dao.userDao;
+import cn.everythinggrows.user.model.egUser;
+import cn.everythinggrows.user.model.emailUid;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Maps;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import redis.clients.jedis.JedisCluster;
+
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.util.*;
 
 @Service
-public class userAccountImpl implements userAccount {
+public class UserAccountImpl implements IUserAccount {
+    public static final String EMAIL_VERIFY = "eg/email/verify/";
+    public static final String UID_TOKEN = "eg/uid/token/";
+    @Autowired
+    private JedisCluster jedisCluster;
+    @Autowired
+    private userDao userDao;
+    @Autowired
+    private createAtDao createAtDao;
+    @Autowired
+    private emailToUidDao emailToUidDao;
+
+    @Value("${portraitList}")
+    String portraitList;
+
     @Override
     public String getMailVerifyAndSend(String toMail) {
-        return null;
+        Properties props = new Properties();
+        props.setProperty("mail.smtp.auth", "true");
+        props.setProperty("mail.transport.protocol", "smtp");
+        props.put("mail.smtp.host","smtp.163.com");
+        // smtp服务器地址
+
+        Session session = Session.getInstance(props);
+        session.setDebug(true);
+
+        Message msg = new MimeMessage(session);
+        String str="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789";
+        StringBuilder sb=new StringBuilder(6);
+        for(int i=0;i<6;i++)
+        {
+            char ch=str.charAt(new Random().nextInt(str.length()));
+            sb.append(ch);
+        }
+        String verify = sb.toString();
+        try {
+            msg.setSubject("<枝丫>注册验证");
+
+        msg.setText("欢迎注册<枝丫>，这是你的验证码：" + verify + "，输入时请区分大小写，有效时间为5分钟，请妥善保存。");
+        msg.setFrom(new InternetAddress("everythinggrows@163.com"));
+        //发件人邮箱
+        msg.setRecipient(Message.RecipientType.TO,
+                new InternetAddress(toMail));
+        //收件人邮箱
+        msg.saveChanges();
+
+        Transport transport = session.getTransport();
+        transport.connect("everythinggrows@163.com","egofficialmu123");
+        //发件人邮箱,授权码
+
+        transport.sendMessage(msg, msg.getAllRecipients());
+
+        System.out.println("邮件发送成功");
+        transport.close();
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        String key = EMAIL_VERIFY + toMail;
+        jedisCluster.setex(key,5*60,verify);
+        return verify;
+    }
+
+    @Override
+    public egResponse ICreateUser(egUser user, String verfity) {
+        long uid = idGeneration.uidGeneration();
+        if(UserUtils.isOffcialUid(uid)){
+            uid = idGeneration.uidGeneration();
+        }
+        user.setUid(uid);
+        String portrait = getRandomPortrait();
+        user.setPortrait(portrait);
+        String redisVerify = jedisCluster.get(EMAIL_VERIFY+user.getEmail());
+        if(redisVerify == null){
+            redisVerify = "";
+        }
+        if(!redisVerify.equals(verfity)){
+            return egResponse.error(10002,"vertify");
+        }
+        int hashEmail = user.getEmail().hashCode();
+        emailUid emailUid = new emailUid();
+        emailUid.setHashid((long) hashEmail);
+        emailUid.setEmail(user.getEmail());
+        emailUid.setUid(uid);
+        int time = (int)System.currentTimeMillis()/1000;
+        int i = userDao.insertUser(user);
+        int j = createAtDao.insertCreateAt(user.getUid(),time);
+        int m = emailToUidDao.insertEmailUid(emailUid);
+        if(i > 0 && j > 0 && m > 0){
+            egResponse loRet = login(user);
+            return loRet;
+        }else {
+            return egResponse.error(10003,"system error");
+        }
+    }
+
+    @Override
+    public egResponse login(egUser user) {
+        Long uid = user.getUid();
+        if(uid == null || uid.equals(0L)){
+            String email = user.getEmail();
+            long hashEmail = (long)email.hashCode();
+            emailUid emailUid = emailToUidDao.selectEmailUid(hashEmail);
+            uid = emailUid.getUid();
+        }
+        egUser user1 = userDao.selectEgUser(uid);
+        String password = user1.getPassword();
+        if(!password.equals(user.getPassword())){
+            return egResponse.error(100001,"password is error");
+        }
+        String uuid = UUID.randomUUID().toString().replaceAll("-", "");
+        String token = String.valueOf(uid) + ";" + uuid;
+        String key = UID_TOKEN + user1.getEmail();
+        jedisCluster.setex(key,7*24*60*60,token);
+        Map<String,Object> ret = Maps.newHashMap();
+        ret.put("token",token);
+        return new egResponse(ret);
+    }
+
+    public String getRandomPortrait(){
+        List<String> list = JSONObject.parseArray(portraitList, String.class);
+        int random = new Random().nextInt(list.size()-1);
+        String portrait = list.get(random);
+        return portrait;
     }
 }

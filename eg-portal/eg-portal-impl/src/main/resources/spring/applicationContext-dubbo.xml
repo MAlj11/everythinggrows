@@ -18,12 +18,9 @@
 
 
     <!--引用的服务 -->
-    <dubbo:reference id="UserAccountImpl" check="false" interface="cn.everythinggrows.user.userAccount"/>
+    <dubbo:reference id="IUserAccount" check="false" interface="cn.everythinggrows.user.service.IUserAccount"/>
+
 
     <!--发布的服务-->
-
-
-
-    <dubbo:consumer check="false"/>
 
 </beans>
