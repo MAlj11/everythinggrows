@@ -37,10 +37,10 @@
 
   <div class="am-collapse am-topbar-collapse" id="blog-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="am-active"><a href="lw-index.vmlw-index.html">首页      </a></li>
+        <li><a href="/index.html">首页      </a></li>
         <li><a href="/type/Photography.html">摄影      </a></li>
         <li><a href="/type/Internet.html">互联网      </a></li>
-        <li><a href="/type/media.html">影音      </a></li>
+        <li class="am-active.html"><a href="/type/media.html">影音      </a></li>
         <li><a href="/type/feeling">感悟      </a></li>
         <li><a href="/type/ganwu">      </a></li>
         <li><a href="/type/ganwu">     </a></li>
@@ -98,7 +98,7 @@
 <!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed">
 
-#foreach($item in $articleList)
+#foreach($item in $mediaList)
     <div class="am-u-md-8 am-u-sm-12">
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">

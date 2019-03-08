@@ -32,32 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailVerifyService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/emailVerifyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HttpClientUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/Utils/HttpClientUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lw-index.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-index.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="405">
+              <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -65,11 +44,24 @@
       <file leaf-file-name="indexController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/controller/account/indexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+            <state relative-caret-position="2145">
+              <caret line="143" column="28" lean-forward="true" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lw-feeling.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-feeling.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="97" column="30" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -77,8 +69,8 @@
       <file leaf-file-name="specialconfig-test.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-portal-impl/profile/specialconfig-test.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="495">
+              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -147,6 +139,10 @@
         <option value="$PROJECT_DIR$/eg-portal-impl/src/main/resources/specialconfig.properties" />
         <option value="$PROJECT_DIR$/eg-portal-impl/pom.xml" />
         <option value="$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-index.vm" />
+        <option value="$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-feeling.vm" />
+        <option value="$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-Internet.vm" />
+        <option value="$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-media.vm" />
+        <option value="$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-Photography.vm" />
         <option value="$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/controller/account/indexController.java" />
       </list>
     </option>
@@ -366,22 +362,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp\images" />
-      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp" />
-      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\resources\spring" />
-      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\java\cn\everythinggrows\Utils" />
-      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp\WEB-INF\templates" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.everythinggrows.Utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp\WEB-INF" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp\assets" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp\WEB-INF\jsp" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\target" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.everythinggrows.Utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp" />
+      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp\images" />
+      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\resources\spring" />
+      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\java\cn\everythinggrows\Utils" />
+      <recent name="I:\IdeaProjects\everythinggrwows\eg-portal\eg-portal-impl\src\main\webapp\WEB-INF\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -606,12 +602,12 @@
       <workItem from="1551622271885" duration="1822000" />
       <workItem from="1551673251699" duration="9080000" />
       <workItem from="1551761864417" duration="30819000" />
-      <workItem from="1552012228724" duration="7175000" />
+      <workItem from="1552012228724" duration="11698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123577000" />
+    <option name="totallyTimeSpent" value="128100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -620,7 +616,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.8019943" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32905984" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.102546915" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.102546915" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -638,7 +634,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.051282052" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info content_ui="combo" x="593" y="61" width="349" height="702" id="Project" order="0" visible="true" weight="0.32573727" />
+      <window_info active="true" content_ui="combo" x="593" y="61" width="349" height="702" id="Project" order="0" visible="true" weight="0.32573727" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -668,16 +664,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/WEB-INF/jsp/sindex.html" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/cn/everythingrows/AppTest.java" />
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/target/classes/spring/spring-mvc.xml" />
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5265">
-          <caret line="351" column="8" selection-start-line="351" selection-start-column="8" selection-end-line="351" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -917,20 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/profile/specialconfig-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/Utils/HttpClientUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/emailVerifyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -941,19 +913,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/profile/specialconfig-test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-index.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="-705">
+          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/Utils/HttpClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-Photography.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="100" column="34" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-Internet.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="100" column="31" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-media.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="100" column="28" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-feeling.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="97" column="30" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/controller/account/indexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+        <state relative-caret-position="2145">
+          <caret line="143" column="28" lean-forward="true" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,7 +2,9 @@ package cn.everythinggrows.blog.controller;
 
 import cn.everythinggrows.base.egResponse;
 import cn.everythinggrows.blog.service.IndexService;
+import org.omg.CORBA.INTERNAL;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class indexController {
     @Autowired
     private IndexService indexService;
+
 
     /**首页文章
      */
@@ -43,4 +46,18 @@ public class indexController {
       egResponse ret = indexService.getIndexBanner();
       return ret;
     }
+
+    /**
+     * 分类文章
+     */
+    @RequestMapping(value = "/blog/type/{typeId}")
+    public egResponse getTypeArticle(@PathVariable(value = "0") String typeId){
+      if(typeId.equals("0")){
+          egResponse retIndex = indexService.getArticleList();
+          return retIndex;
+      }
+     egResponse ret = indexService.getArticleWithType(Integer.parseInt(typeId));
+      return ret;
+    }
+
 }

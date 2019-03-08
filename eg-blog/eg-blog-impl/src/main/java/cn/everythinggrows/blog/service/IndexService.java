@@ -5,7 +5,9 @@ import cn.everythinggrows.base.egResponse;
 import cn.everythinggrows.blog.Utils.ArticleUtils;
 import cn.everythinggrows.blog.dao.BannerDao;
 import cn.everythinggrows.blog.dao.IndexDao;
+import cn.everythinggrows.blog.dao.TypeArticleDao;
 import cn.everythinggrows.blog.model.Banner;
+import cn.everythinggrows.blog.model.EgTypeArticle;
 import cn.everythinggrows.blog.model.egArticle;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -28,6 +30,8 @@ public class IndexService {
     private IndexDao indexDao;
     @Autowired
     private BannerDao bannerDao;
+    @Autowired
+    private TypeArticleDao typeArticleDao;
 
 
     public egResponse getArticleList(){
@@ -64,7 +68,15 @@ public class IndexService {
         return new egResponse(ret);
     }
 
-
+     public egResponse getArticleWithType(int type){
+        List<EgTypeArticle> egTypeArticleList = typeArticleDao.getTypeArticleList(type);
+        for(EgTypeArticle egTypeArticle : egTypeArticleList){
+            egTypeArticle.setTypeString(ArticleUtils.getTypeWithInt(type));
+        }
+        Map<String,Object> ret = Maps.newHashMap();
+        ret.put("articleWithTypeList",ret);
+        return new egResponse(ret);
+     }
 
 
 

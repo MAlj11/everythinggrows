@@ -2,6 +2,7 @@ package cn.everythinggrows.portal.controller.account;
 
 
 import cn.everythinggrows.model.Banner;
+import cn.everythinggrows.model.EgTypeArticle;
 import cn.everythinggrows.model.egArticle;
 import cn.everythinggrows.portal.Utils.HttpClientUtil;
 import com.alibaba.fastjson.JSON;
@@ -83,5 +84,65 @@ public class indexController {
         return "lw-log";
     }
 
+    @RequestMapping(value = "/type/Photography.html")
+    public String getPhotography(@Context HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String typeUrl = BASE_URL_BLOG + "/type/1";
+        String typeRet = HttpClientUtil.doGet(typeUrl);
+        JSONObject json = JSON.parseObject(typeRet);
+        Map<String,Object> typeArticleMap = JSONObject.toJavaObject(json, Map.class);
+        List<EgTypeArticle> PhotographyList = null;
+        if(typeArticleMap.get("errorCode").equals("0")){
+            PhotographyList = (List<EgTypeArticle>)typeArticleMap.get("articleWithTypeList");
+        }
+        session.setAttribute("PhotographyList",PhotographyList);
+        return "lw-Photography";
+    }
+
+    @RequestMapping(value = "/type/Internet.html")
+    public String getInternet(@Context HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String typeUrl = BASE_URL_BLOG + "/type/2";
+        String typeRet = HttpClientUtil.doGet(typeUrl);
+        JSONObject json = JSON.parseObject(typeRet);
+        Map<String,Object> typeArticleMap = JSONObject.toJavaObject(json, Map.class);
+        List<EgTypeArticle> InternetList = null;
+        if(typeArticleMap.get("errorCode").equals("0")){
+            InternetList = (List<EgTypeArticle>)typeArticleMap.get("articleWithTypeList");
+        }
+        session.setAttribute("InternetList",InternetList);
+        return "lw-Internet";
+    }
+
+    @RequestMapping(value = "/type/media.html")
+    public String getMedia(@Context HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String typeUrl = BASE_URL_BLOG + "/type/3";
+        String typeRet = HttpClientUtil.doGet(typeUrl);
+        JSONObject json = JSON.parseObject(typeRet);
+        Map<String,Object> typeArticleMap = JSONObject.toJavaObject(json, Map.class);
+        List<EgTypeArticle> mediaList = null;
+        if(typeArticleMap.get("errorCode").equals("0")){
+            mediaList = (List<EgTypeArticle>)typeArticleMap.get("articleWithTypeList");
+        }
+        session.setAttribute("mediaList",mediaList);
+        return "lw-media";
+    }
+
+    @RequestMapping(value = "/type/feeling")
+    public String getFeeling(@Context HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String typeUrl = BASE_URL_BLOG + "/type/4";
+        String typeRet = HttpClientUtil.doGet(typeUrl);
+        JSONObject json = JSON.parseObject(typeRet);
+        Map<String,Object> typeArticleMap = JSONObject.toJavaObject(json, Map.class);
+        List<EgTypeArticle> feelingList = null;
+        if(typeArticleMap.get("errorCode").equals("0")){
+            feelingList = (List<EgTypeArticle>)typeArticleMap.get("articleWithTypeList");
+        }
+        session.setAttribute("feelingList",feelingList);
+        return "lw-feeling";
+
+    }
 
 }
