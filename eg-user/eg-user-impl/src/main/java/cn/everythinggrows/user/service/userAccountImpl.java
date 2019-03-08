@@ -1,7 +1,7 @@
 package cn.everythinggrows.user.service;
 
 import cn.everythinggrows.user.Utils.UserUtils;
-import cn.everythinggrows.user.Utils.egResponse;
+import cn.everythinggrows.base.egResponse;
 import cn.everythinggrows.user.Utils.idGeneration;
 import cn.everythinggrows.user.dao.createAtDao;
 import cn.everythinggrows.user.dao.emailToUidDao;
@@ -50,7 +50,6 @@ public class UserAccountImpl implements IUserAccount {
 
         Session session = Session.getInstance(props);
         session.setDebug(true);
-
         Message msg = new MimeMessage(session);
         String str="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789";
         StringBuilder sb=new StringBuilder(6);

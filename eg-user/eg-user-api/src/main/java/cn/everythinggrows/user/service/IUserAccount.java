@@ -1,7 +1,6 @@
 package cn.everythinggrows.user.service;
 
 
-import cn.everythinggrows.user.Utils.egResponse;
 import cn.everythinggrows.user.model.egUser;
 
 public interface IUserAccount {
