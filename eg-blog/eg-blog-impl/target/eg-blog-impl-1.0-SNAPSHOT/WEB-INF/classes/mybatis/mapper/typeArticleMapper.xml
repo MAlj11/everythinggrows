@@ -33,6 +33,5 @@
         type,articleName,coverPic,aid,uid,title
         FROM
         ${tableName}
-        WHERE type=${type}
     </select>
 </mapper>

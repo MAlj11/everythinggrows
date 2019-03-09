@@ -52,7 +52,7 @@ public class indexController {
      */
     @RequestMapping(value = "/blog/type/{typeId}")
     public egResponse getTypeArticle(@PathVariable(value = "0") String typeId){
-      if(typeId.equals("0")){
+      if(typeId.equals("0") || typeId == null){
           egResponse retIndex = indexService.getArticleList();
           return retIndex;
       }

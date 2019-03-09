@@ -28,6 +28,7 @@ import java.util.*;
 public class UserAccountImpl implements IUserAccount {
     public static final String EMAIL_VERIFY = "eg/email/verify/";
     public static final String UID_TOKEN = "eg/uid/token/";
+    public static final String USER_DETAIL = "eg/user/detail/uid/";
     @Autowired
     private JedisCluster jedisCluster;
     @Autowired
@@ -145,5 +146,30 @@ public class UserAccountImpl implements IUserAccount {
         int random = new Random().nextInt(list.size()-1);
         String portrait = list.get(random);
         return portrait;
+    }
+
+    public egUser getUser(long uid){
+        String key = USER_DETAIL + String.valueOf(uid);
+        Map<String,String> value = jedisCluster.hgetAll(key);
+        egUser user = null;
+        if(value == null) {
+           user = userDao.selectEgUser(uid);
+           Map<String,String> redis = Maps.newHashMap();
+           redis.put("uid",String.valueOf(user.getUid()));
+           redis.put("username",user.getUsername());
+           redis.put("password",user.getPassword());
+           redis.put("email",user.getEmail());
+           redis.put("portrait",user.getPortrait());
+           jedisCluster.hmset(key,redis);
+           jedisCluster.expire(key,5*60);
+           return user;
+        }
+        user.setUid(uid);
+        user.setUsername(value.get("uid"));
+        user.setUsername(value.get("username"));
+        user.setPassword(value.get("password"));
+        user.setEmail(value.get("email"));
+        user.setPortrait(value.get("portrait"));
+        return user;
     }
 }

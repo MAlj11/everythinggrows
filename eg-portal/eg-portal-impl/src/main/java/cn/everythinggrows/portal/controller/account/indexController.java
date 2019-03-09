@@ -1,19 +1,22 @@
 package cn.everythinggrows.portal.controller.account;
 
-
-import cn.everythinggrows.model.Banner;
-import cn.everythinggrows.model.EgTypeArticle;
-import cn.everythinggrows.model.egArticle;
+import cn.everythinggrows.blog.model.Banner;
+import cn.everythinggrows.blog.model.EgTypeArticle;
+import cn.everythinggrows.blog.model.egArticle;
 import cn.everythinggrows.portal.Utils.HttpClientUtil;
+import cn.everythinggrows.portal.service.IndexService;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.omg.CORBA.OBJ_ADAPTER;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -27,6 +30,9 @@ import java.util.Map;
 @Controller
 public class indexController {
   private Logger logger = LoggerFactory.getLogger(indexController.class);
+
+  @Autowired
+  private IndexService indexService;
 
     @Value("${BASE_URL_BLOG}")
     String BASE_URL_BLOG;
@@ -129,7 +135,7 @@ public class indexController {
         return "lw-media";
     }
 
-    @RequestMapping(value = "/type/feeling")
+    @RequestMapping(value = "/type/feeling.html")
     public String getFeeling(@Context HttpServletRequest request){
         HttpSession session = request.getSession();
         String typeUrl = BASE_URL_BLOG + "/type/4";
@@ -143,6 +149,18 @@ public class indexController {
         session.setAttribute("feelingList",feelingList);
         return "lw-feeling";
 
+    }
+
+    @RequestMapping(value = "/index/article/detail")
+    public String getDetailArticle(@RequestParam(value = "aid",defaultValue = "0") long aid,
+                                   @RequestParam(value = "uid",defaultValue = "0") long uid,
+                                   @Context HttpServletRequest request){
+        String article = indexService.getDetailArticle(aid);
+        String user = indexService.getUserDetail(uid);
+        HttpSession session = request.getSession();
+        session.setAttribute("articleDetail",article);
+        session.setAttribute("userDetetail",user);
+        return "lw-article-fullwidth";
     }
 
 }

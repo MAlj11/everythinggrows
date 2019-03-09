@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import redis.clients.jedis.JedisCluster;
 
+import java.time.LocalDate;
+import java.util.Calendar;
+
 @RestController
 public class ArticleController {
 
@@ -40,7 +43,12 @@ public class ArticleController {
                                     @RequestParam(defaultValue = "") String title){
         egArticle egArticle = new egArticle();
         long aid = RedisDao.aidGeneration();
-        int createAt = (int)System.currentTimeMillis()/1000;
+        Calendar calendar=Calendar.getInstance();
+        int month=calendar.get(Calendar.MONTH)+1;
+        int year = calendar.get(Calendar.YEAR);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        String today = String.valueOf(year) + String.valueOf(month) + String.valueOf(day);
+        int createAt = Integer.parseInt(today);
         egArticle.setId(aid);
         egArticle.setArticleName(articleName);
         egArticle.setUid(uid);
