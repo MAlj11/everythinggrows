@@ -29,23 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="indexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/indexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-400">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,83 +41,103 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="egArticle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-api/src/main/java/cn/everythinggrows/blog/model/egArticle.java">
+      <file leaf-file-name="CommentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="375">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/CommentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-dubbo.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-dubbo.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/CommentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/CommentMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/IndexMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/Comment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <folding>
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
                 <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/IndexService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EgTypeArticle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/EgTypeArticle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-              <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext-dao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-dao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" column="61" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeArticleDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/TypeArticleDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="typeArticleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/typeArticleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/IndexDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1175#1176#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,8 +146,20 @@
       <file leaf-file-name="BannerDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/BannerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/IndexDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,7 +184,6 @@
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/eg-blog-impl/pom.xml" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-dubbo.xml" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-redis.xml" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/egUidArticle.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/redisDao/redisDao.java" />
@@ -175,7 +194,6 @@
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/event/IndexArticleEvent.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/indexService.java" />
         <option value="$PROJECT_DIR$/eg-blog-api/src/main/java/cn/everythinggrows/model/egArticle.java" />
-        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/Utils/ArticleUtils.java" />
         <option value="$PROJECT_DIR$/eg-blog-api/src/main/java/cn/everythinggrows/model/egUidArticle.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/EgTypeArticle.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/egArticle.java" />
@@ -184,7 +202,6 @@
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/UidArticleMapper.xml" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/BannerDao.java" />
         <option value="$PROJECT_DIR$/eg-blog-api/src/main/java/cn/everythinggrows/model/Banner.java" />
-        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/IndexDao.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/typeArticleMapper.xml" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/TypeArticleDao.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/IndexService.java" />
@@ -192,6 +209,15 @@
         <option value="$PROJECT_DIR$/eg-blog-api/src/main/java/cn/everythinggrows/blog/model/egArticle.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/ArticleController.java" />
         <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/indexController.java" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/Comment.java" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/Comment.java" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/IndexDao.java" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/CommentMapper.xml" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/Utils/ArticleUtils.java" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-dubbo.xml" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/CommentDao.java" />
+        <option value="$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/CommentService.java" />
       </list>
     </option>
   </component>
@@ -470,8 +496,8 @@
       <recent name="cn.everythinggrows.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-api\src\main\java\cn\everythinggrows\model" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\resources\mybatis\mapper" />
+      <recent name="I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-api\src\main\java\cn\everythinggrows\model" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\resources" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\profile" />
     </key>
@@ -543,12 +569,12 @@
       <updated>1551854363505</updated>
       <workItem from="1551854368501" duration="14480000" />
       <workItem from="1552012367328" duration="14842000" />
-      <workItem from="1552098981643" duration="5771000" />
+      <workItem from="1552098981643" duration="8346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35093000" />
+    <option name="totallyTimeSpent" value="37668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -603,62 +629,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/IndexService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="36" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/EgTypeArticle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="61" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/TypeArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/typeArticleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/IndexDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/Banner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -829,13 +799,6 @@
         <state relative-caret-position="-122" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-dubbo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -896,13 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/Utils/ArticleUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/egArticle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -930,13 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/IndexMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -972,29 +921,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/BannerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-blog-api/src/main/java/cn/everythinggrows/blog/model/Banner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/IndexDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/typeArticleMapper.xml">
@@ -1036,7 +965,7 @@
     <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/IndexService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
-          <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1046,7 +975,7 @@
     <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/indexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
-          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1056,7 +985,7 @@
     <entry file="file://$PROJECT_DIR$/eg-blog-api/src/main/java/cn/everythinggrows/blog/model/egArticle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
             <element signature="e#333#334#0" expanded="true" />
             <element signature="e#364#365#0" expanded="true" />
@@ -1068,7 +997,132 @@
     <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-400">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/IndexMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/BannerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/Utils/ArticleUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/mybatis/mapper/CommentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/resources/spring/applicationContext-dubbo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/IndexDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-blog-impl/src/main/java/cn/everythinggrows/blog/service/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

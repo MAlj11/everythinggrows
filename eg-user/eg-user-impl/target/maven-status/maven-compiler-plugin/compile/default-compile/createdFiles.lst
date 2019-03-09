@@ -15,6 +15,7 @@ cn\everythinggrows\user\Utils\CookieUtils.class
 cn\everythinggrows\user\Utils\DBUtils.class
 cn\everythinggrows\user\model\egUser.class
 cn\everythinggrows\user\Utils\EncryptType.class
+cn\everythinggrows\user\controller\UserController.class
 cn\everythinggrows\user\model\emailUid.class
 cn\everythinggrows\user\service\UserAccountImpl.class
 cn\everythinggrows\user\dao\createAtDao.class

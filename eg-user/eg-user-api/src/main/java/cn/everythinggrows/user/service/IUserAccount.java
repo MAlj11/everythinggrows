@@ -9,5 +9,7 @@ public interface IUserAccount {
     public String ICreateUser(egUser user,String vertify);
 
     public String login(egUser user);
+
+    public egUser getUser(long uid);
 }
 

@@ -27,6 +27,7 @@ public class IndexDao {
         long DBkey = DBUtils.getDBKey(id);
         DBContextHolder.setDBKey(DBkey);
         egArticle egArticle = blogSqlSession.selectOne("blogIndexDao.selectArticle", dataMap);
+        DBContextHolder.clearDBKey();
         return egArticle;
     }
 
@@ -37,6 +38,7 @@ public class IndexDao {
         long DBkey = DBUtils.getDBKey(id);
         DBContextHolder.setDBKey(DBkey);
         int i = blogSqlSession.insert("insertArticle.selectArticle", dataMap);
+        DBContextHolder.clearDBKey();
         return i;
     }
 

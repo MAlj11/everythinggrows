@@ -41,14 +41,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/controller/account/indexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="144" column="79" selection-start-line="144" selection-start-column="79" selection-end-line="144" selection-end-column="79" />
+            <state relative-caret-position="427">
+              <caret line="156" column="60" lean-forward="true" selection-start-line="156" selection-start-column="60" selection-end-line="156" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleDetailService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/ArticleDetailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-dubbo.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/resources/spring/applicationContext-dubbo.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="111" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="111" />
             </state>
           </provider>
         </entry>
@@ -136,6 +154,8 @@
         <option value="$PROJECT_DIR$/eg-portal-impl/src/main/webapp/lw-article-fullwidth.vm" />
         <option value="$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/IndexService.java" />
         <option value="$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/controller/account/indexController.java" />
+        <option value="$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/CommentService.java" />
+        <option value="$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/ArticleDetailService.java" />
       </list>
     </option>
   </component>
@@ -610,12 +630,12 @@
       <workItem from="1551673251699" duration="9080000" />
       <workItem from="1551761864417" duration="30819000" />
       <workItem from="1552012228724" duration="14429000" />
-      <workItem from="1552100284325" duration="8897000" />
+      <workItem from="1552100284325" duration="13828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139728000" />
+    <option name="totallyTimeSpent" value="144659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -643,7 +663,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.051282052" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info active="true" content_ui="combo" x="593" y="61" width="349" height="702" id="Project" order="0" visible="true" weight="0.18431635" />
+      <window_info active="true" content_ui="combo" x="593" y="61" width="349" height="702" id="Project" order="0" visible="true" weight="0.26876676" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -672,8 +692,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/resources/spring/spring-service.xml" />
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/resources/spring/spring-context.xml" />
     <entry file="file://$PROJECT_DIR$/eg-portal-api/src/main/java/cn/everythingrows/App.java" />
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/WEB-INF/jsp/lw-index.jsp" />
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/WEB-INF/jsp/sindex.jsp" />
@@ -773,13 +791,6 @@
       </provider>
     </entry>
     <entry file="jar://I:/apps/applications/apache-maven-3.5.3/apache-maven-3.5.3/cn/everythinggrows/eg-user-api/1.0-SNAPSHOT/eg-user-api-1.0-SNAPSHOT-sources.jar!/cn/everythinggrows/user/IUserAccount.java" />
-    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/resources/spring/applicationContext-dubbo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/webapp/error.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -979,13 +990,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/controller/account/indexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="144" column="79" selection-start-line="144" selection-start-column="79" selection-end-line="144" selection-end-column="79" />
+        <state relative-caret-position="427">
+          <caret line="156" column="60" lean-forward="true" selection-start-line="156" selection-start-column="60" selection-end-line="156" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/java/cn/everythinggrows/portal/service/ArticleDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-portal-impl/src/main/resources/spring/applicationContext-dubbo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="111" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="111" />
         </state>
       </provider>
     </entry>

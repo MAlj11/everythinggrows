@@ -148,6 +148,7 @@ public class UserAccountImpl implements IUserAccount {
         return portrait;
     }
 
+    @Override
     public egUser getUser(long uid){
         String key = USER_DETAIL + String.valueOf(uid);
         Map<String,String> value = jedisCluster.hgetAll(key);
