@@ -1,6 +1,7 @@
 package cn.everythinggrows.portal.service;
 
 import cn.everythinggrows.portal.Utils.HttpClientUtil;
+import cn.everythinggrows.user.model.egUser;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Value;

@@ -35,6 +35,7 @@ public class indexController {
   private IndexService indexService;
 
     @Value("${BASE_URL_BLOG}")
+
     String BASE_URL_BLOG;
 
     @RequestMapping("/sindex.html")
@@ -148,18 +149,16 @@ public class indexController {
         }
         session.setAttribute("feelingList",feelingList);
         return "lw-feeling";
-
     }
 
-    @RequestMapping(value = "/index/article/detail")
-    public String getDetailArticle(@RequestParam(value = "aid",defaultValue = "0") long aid,
-                                   @RequestParam(value = "uid",defaultValue = "0") long uid,
+    @RequestMapping(value = "/index/article/detail/{ID}")
+    public String getDetailArticle(@PathVariable(value = "0") long aid,
                                    @Context HttpServletRequest request){
         String article = indexService.getDetailArticle(aid);
-        String user = indexService.getUserDetail(uid);
+//        String user = indexService.getUserDetail(uid);
         HttpSession session = request.getSession();
         session.setAttribute("articleDetail",article);
-        session.setAttribute("userDetetail",user);
+//        session.setAttribute("userDetetail",user);
         return "lw-article-fullwidth";
     }
 
