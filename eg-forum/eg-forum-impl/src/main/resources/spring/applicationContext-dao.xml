@@ -63,10 +63,10 @@
         <property name="dataSource" ref="dynamicDataSource"/>
         <property name="configLocation" value="classpath:mybatis/SqlMapperConfig.xml"/>
     </bean>
-    <bean id="userSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+    <bean id="blogSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
-    <bean id="dynamicDataSource" class="cn.everythinggrows.user.datasource.DynamicDateSource">
+    <bean id="dynamicDataSource" class="cn.everythinggrows.base.datasource.DynamicDateSource">
         <property name="targetDataSources">
             <map key-type="java.lang.Integer">
                 <entry key="0" value-ref="dataSourceR0"/>
@@ -85,5 +85,6 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="/mybatis/mapper/*"></property>
     </bean>
-    <context:component-scan base-package="cn.everythinggrows.user.dao"></context:component-scan>
+
+    <context:component-scan base-package="cn.everythinggrows.forum.dao"></context:component-scan>
 </beans>

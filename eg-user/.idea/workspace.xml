@@ -5,6 +5,9 @@
       <artifact name="eg-user-impl:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/eg-user-impl/src/main/resources/spring/applicationContext-dao.xml" line="87" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0ed8f329-b0da-4d41-8a6c-2e5943d7073d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAccountImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserAccountImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/service/UserAccountImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="155" column="17" selection-start-line="155" selection-start-column="17" selection-end-line="155" selection-end-column="17" />
+            <state relative-caret-position="397">
+              <caret line="165" column="23" lean-forward="true" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,10 +58,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="applicationContext-dao.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/resources/spring/applicationContext-dao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="88" column="8" lean-forward="true" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="270">
               <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,11 +135,11 @@
         <option value="$PROJECT_DIR$/eg-user-impl/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/eg-user-impl/src/main/resources/specialconfig.properties" />
         <option value="$PROJECT_DIR$/eg-user-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/eg-user-impl/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/Utils/idGeneration.java" />
         <option value="$PROJECT_DIR$/eg-user-api/src/main/java/cn/everythinggrows/user/service/IUserAccount.java" />
         <option value="$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/service/UserAccountImpl.java" />
+        <option value="$PROJECT_DIR$/eg-user-impl/src/main/resources/spring/applicationContext-dao.xml" />
       </list>
     </option>
   </component>
@@ -199,8 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -397,7 +409,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -564,19 +576,21 @@
       <workItem from="1551762070367" duration="23724000" />
       <workItem from="1552019887026" duration="1824000" />
       <workItem from="1552119892723" duration="4959000" />
+      <workItem from="1552202072775" duration="1251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59654000" />
+    <option name="totallyTimeSpent" value="60905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20509383" side_tool="true" weight="0.23361823" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.2008547" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.121313676" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.048257373" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -594,7 +608,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.79490614" weight="0.2008547" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49798927" weight="0.06980057" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2546917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22922252" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -884,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/resources/spring/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="62" column="83" lean-forward="true" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/dao/userDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -902,10 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,7 +921,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="270">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -935,11 +938,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/java/cn/everythinggrows/user/service/UserAccountImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="155" column="17" selection-start-line="155" selection-start-column="17" selection-end-line="155" selection-end-column="17" />
+        <state relative-caret-position="397">
+          <caret line="165" column="23" lean-forward="true" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-user-impl/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="88" column="8" lean-forward="true" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
         </state>
       </provider>
     </entry>

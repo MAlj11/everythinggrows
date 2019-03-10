@@ -27,6 +27,7 @@ public class CommentDao {
         long DBkey = DBUtils.getDBKey(aid);
         DBContextHolder.setDBKey(DBkey);
         List<Comment> comments = blogSqlSession.selectList("CommentDao.selectComment");
+        DBContextHolder.clearDBKey();
         return comments;
     }
 
@@ -37,6 +38,7 @@ public class CommentDao {
         long DBkey = DBUtils.getDBKey(comment.getAid());
         DBContextHolder.setDBKey(DBkey);
         int i = blogSqlSession.insert("CommentDao.insertComment");
+        DBContextHolder.clearDBKey();
         return i;
     }
 }
