@@ -1,9 +1,12 @@
+I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\controller\CommentController.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\dao\TypeArticleDao.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\dao\IndexDao.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\service\IndexService.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\model\egArticle.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\dao\redisdao\RedisDao.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\controller\indexController.java
+I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\model\Comment.java
+I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\dao\CommentDao.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\model\EgTypeArticle.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\model\Banner.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\event\IndexArticleEvent.java
@@ -11,4 +14,5 @@ I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythin
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\dao\BannerDao.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\dao\UidArticleDao.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\Utils\ArticleUtils.java
+I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\service\CommentService.java
 I:\IdeaProjects\everythinggrwows\eg-blog\eg-blog-impl\src\main\java\cn\everythinggrows\blog\controller\ArticleController.java

@@ -1,5 +1,6 @@
 cn\everythinggrows\blog\model\EgTypeArticle.class
 cn\everythinggrows\blog\model\egArticle.class
+cn\everythinggrows\blog\model\Comment.class
 cn\everythinggrows\blog\model\Banner.class
 cn\everythinggrows\blog\model\egUidArticle.class
 cn\everythinggrows\blog\App.class

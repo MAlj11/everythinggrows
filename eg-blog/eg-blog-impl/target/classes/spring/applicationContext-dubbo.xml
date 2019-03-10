@@ -16,7 +16,7 @@
     <dubbo:annotation package="cn.everythinggrows"/>
 
     <!--引用的服务 -->
-
+    <dubbo:reference id="IUserAccount" check="false" interface="cn.everythinggrows.user.service.IUserAccount"/>
 
     <!--发布的服务-->
     <!--<bean id="IUserAccount" class="cn.everythinggrows.user.service.UserAccountImpl"/>-->

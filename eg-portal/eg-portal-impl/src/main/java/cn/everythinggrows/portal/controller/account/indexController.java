@@ -1,9 +1,11 @@
 package cn.everythinggrows.portal.controller.account;
 
 import cn.everythinggrows.blog.model.Banner;
+import cn.everythinggrows.blog.model.Comment;
 import cn.everythinggrows.blog.model.EgTypeArticle;
 import cn.everythinggrows.blog.model.egArticle;
 import cn.everythinggrows.portal.Utils.HttpClientUtil;
+import cn.everythinggrows.portal.service.ArticleDetailService;
 import cn.everythinggrows.portal.service.IndexService;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -33,6 +35,8 @@ public class indexController {
 
   @Autowired
   private IndexService indexService;
+  @Autowired
+  private ArticleDetailService articleDetailService;
 
     @Value("${BASE_URL_BLOG}")
 
@@ -151,14 +155,16 @@ public class indexController {
         return "lw-feeling";
     }
 
-    @RequestMapping(value = "/index/article/detail/{ID}")
-    public String getDetailArticle(@PathVariable(value = "0") long aid,
+    @RequestMapping(value = "/index/article/detail/{aid}")
+    public String getDetailArticle(@PathVariable("aid") long aid,
                                    @Context HttpServletRequest request){
         String article = indexService.getDetailArticle(aid);
 //        String user = indexService.getUserDetail(uid);
         HttpSession session = request.getSession();
         session.setAttribute("articleDetail",article);
 //        session.setAttribute("userDetetail",user);
+        List<Comment> comments = articleDetailService.getCommentDetail(aid);
+        session.setAttribute("commentDetail",comments);
         return "lw-article-fullwidth";
     }
 
