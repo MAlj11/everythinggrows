@@ -2,6 +2,7 @@ package cn.everythinggrows.forum.controller;
 
 
 import cn.everythinggrows.base.egResponse;
+import cn.everythinggrows.forum.aop.NeedSession;
 import cn.everythinggrows.forum.dao.Topicdao;
 import cn.everythinggrows.forum.model.TopicDetail;
 import cn.everythinggrows.forum.service.TopicService;
@@ -56,6 +57,7 @@ public class TopicDetailController {
      * @param session
      * @return
      */
+    @NeedSession
     @RequestMapping(value = "/forum/topic/detail/insert")
     public egResponse inseretTopicDetail(@Context HttpServletRequest request,
                                          @RequestParam(value = "tid",defaultValue = "0") long tid,
@@ -82,6 +84,7 @@ public class TopicDetailController {
      * @param tid
      * @return
      */
+    @NeedSession
     @RequestMapping(value = "/forum/topic/detail/delete")
     public egResponse deleteTopicDetail(@Context HttpServletRequest request,
                                         @RequestParam(value = "id") long id,

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 数据库连接池 -->
+    <bean id="defaultDataSourceConfig" class="com.jolbox.bonecp.BoneCPDataSource" abstract="true">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="idleConnectionTestPeriodInMinutes" value="5"/>
+        <property name="idleMaxAgeInMinutes" value="10"/>
+        <property name="maxConnectionAgeInSeconds" value="1800"/>
+            <property name="maxConnectionsPerPartition" value="${db.default.maxConnectionsPerPartition}"/>
+            <property name="minConnectionsPerPartition" value="${db.default.minConnectionsPerPartition}"/>
+            <property name="partitionCount" value="${db.default.partitionCount}"/>
+        <property name="acquireIncrement" value="5"/>
+        <property name="statementsCacheSize" value="0"/>
+        <property name="disableConnectionTracking" value="true"/>
+        <property name="initSQL" value="set names utf8mb4;"/>
+    </bean>
+    <bean id="dataSourceR0" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R0}"/>
+        <property name="username" value="${user.db.username.R0}"/>
+        <property name="password" value="${user.db.password.R0}"/>
+    </bean>
+    <bean id="dataSourceR1" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R1}"/>
+        <property name="username" value="${user.db.username.R1}"/>
+        <property name="password" value="${user.db.password.R1}"/>
+    </bean>
+    <bean id="dataSourceR2" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R2}"/>
+        <property name="username" value="${user.db.username.R2}"/>
+        <property name="password" value="${user.db.password.R2}"/>
+    </bean>
+    <bean id="dataSourceR3" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R3}"/>
+        <property name="username" value="${user.db.username.R3}"/>
+        <property name="password" value="${user.db.password.R3}"/>
+    </bean>
+    <bean id="dataSourceR4" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R4}"/>
+        <property name="username" value="${user.db.username.R4}"/>
+        <property name="password" value="${user.db.password.R4}"/>
+    </bean>
+    <bean id="dataSourceR5" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R5}"/>
+        <property name="username" value="${user.db.username.R5}"/>
+        <property name="password" value="${user.db.password.R5}"/>
+    </bean>
+    <bean id="dataSourceR6" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R6}"/>
+        <property name="username" value="${user.db.username.R6}"/>
+        <property name="password" value="${user.db.password.R6}"/>
+    </bean>
+    <bean id="dataSourceR7" parent="defaultDataSourceConfig">
+        <property name="jdbcUrl" value="${user.db.url.R7}"/>
+        <property name="username" value="${user.db.username.R7}"/>
+        <property name="password" value="${user.db.password.R7}"/>
+    </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dynamicDataSource"/>
+        <property name="configLocation" value="classpath:mybatis/SqlMapperConfig.xml"/>
+    </bean>
+    <bean id="blogSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+    <bean id="dynamicDataSource" class="cn.everythinggrows.base.datasource.DynamicDateSource">
+        <property name="targetDataSources">
+            <map key-type="java.lang.Integer">
+                <entry key="0" value-ref="dataSourceR0"/>
+                <entry key="1" value-ref="dataSourceR1"/>
+                <entry key="2" value-ref="dataSourceR2"/>
+                <entry key="3" value-ref="dataSourceR3"/>
+                <entry key="4" value-ref="dataSourceR4"/>
+                <entry key="5" value-ref="dataSourceR5"/>
+                <entry key="6" value-ref="dataSourceR6"/>
+                <entry key="7" value-ref="dataSourceR7"/>
+            </map>
+        </property>
+        <property name="mapSize" value="10"/>
+    </bean>
+    <!-- 配置扫描包，加载mapper代理对象 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="/mybatis/mapper/*"></property>
+    </bean>
+    <context:component-scan base-package="cn.everythinggrows.blog.dao"></context:component-scan>
+</beans>

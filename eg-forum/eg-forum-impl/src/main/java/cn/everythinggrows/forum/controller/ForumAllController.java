@@ -1,18 +1,16 @@
 package cn.everythinggrows.forum.controller;
 
-
 import cn.everythinggrows.base.egResponse;
+import cn.everythinggrows.forum.aop.NeedSession;
 import cn.everythinggrows.forum.service.ForumAllService;
 import cn.everythinggrows.user.model.egUser;
 import cn.everythinggrows.user.service.IUserAccount;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+
+
+@RestController
 public class ForumAllController {
     @Autowired
     private ForumAllService forumAllService;
@@ -37,6 +35,7 @@ public class ForumAllController {
      * @param tid
      * @return
      */
+    @NeedSession
     @RequestMapping(value = "/forum/index/delete/{tid}")
     public egResponse deleteForumTopic(@PathVariable("tid") long tid){
         int i = forumAllService.deleteTopic(tid);
@@ -53,6 +52,7 @@ public class ForumAllController {
      * @param session
      * @return
      */
+    @NeedSession
     @RequestMapping(value = "/forum/index/insert")
     public egResponse insertTopic(@RequestParam(value = "content") String content,
                            @RequestHeader(value = "EG-SESSION") String session){
