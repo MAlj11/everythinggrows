@@ -4,10 +4,12 @@ package cn.everythinggrows.forum.service;
 import cn.everythinggrows.forum.dao.Topicdao;
 import cn.everythinggrows.forum.model.TopicDetail;
 import cn.everythinggrows.user.model.egUser;
+import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
+import java.util.List;
 
 @Service
 public class TopicService {
@@ -32,5 +34,29 @@ public class TopicService {
         topicDetail.setCreateAt(createAt);
         int i = topicdao.insertTopicDetail(topicDetail);
         return i;
+    }
+
+    public List<TopicDetail> getTopicDetailLsit(long tid){
+        List<TopicDetail> topicDetails = Lists.newArrayList();
+        if(tid == 0){
+            return topicDetails;
+        }
+        topicDetails = topicdao.getTopicDetailList(tid);
+        return topicDetails;
+    }
+
+    public int createTable(long tid){
+        int i = topicdao.createTopicDetailTable(tid);
+        return i;
+    }
+
+    public int deleteTanble(long tid){
+        int i = topicdao.deleteTopicDetailTable(tid);
+        return i;
+    }
+
+    public int deleteTopicDetail(long id, long tid){
+         int i = topicdao.deleteTopicDetail(id,tid);
+         return i;
     }
 }

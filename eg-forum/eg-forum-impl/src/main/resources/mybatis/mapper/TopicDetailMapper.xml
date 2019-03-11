@@ -66,4 +66,10 @@
          ${tableName}
         WHERE tid = #{tid}
     </select>
+
+    <delete id="deleteTopicDetail" parameterType="java.util.Map">
+      DELETE
+      FROM ${tableName}
+      WHERE id = #{id}
+    </delete>
 </mapper>

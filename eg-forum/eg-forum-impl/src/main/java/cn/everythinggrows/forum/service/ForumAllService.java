@@ -15,6 +15,10 @@ import java.util.Calendar;
 public class ForumAllService {
     @Autowired
     private ForumAllDao forumAllDao;
+    @Autowired
+    private TopicService topicService;
+
+
     public egResponse getForumAll(){
 
         //todo 分库分表进行分页查询
@@ -40,6 +44,11 @@ public class ForumAllService {
         int createAt = Integer.parseInt(createAtStr);
         topic.setCreateAt(createAt);
         int i = forumAllDao.insertTopic(topic);
-        return i;
+        int j = topicService.createTable(tid);
+        int ret = 0;
+        if(i > 0 && j > 0){
+            ret = 1;
+        }
+        return ret;
     }
 }
