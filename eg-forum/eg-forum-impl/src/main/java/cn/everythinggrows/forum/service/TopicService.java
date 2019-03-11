@@ -50,7 +50,7 @@ public class TopicService {
         return i;
     }
 
-    public int deleteTanble(long tid){
+    public int deleteTable(long tid){
         int i = topicdao.deleteTopicDetailTable(tid);
         return i;
     }

@@ -14,4 +14,9 @@ public class idGeneration {
         return tid;
     }
 
+    public static long getTidNotIncr(){
+        String tid = jedisCluster.get(TOPIC_TID);
+        return Long.parseLong(tid);
+    }
+
 }
