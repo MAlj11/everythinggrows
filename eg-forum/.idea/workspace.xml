@@ -18,57 +18,50 @@
       <file leaf-file-name="TopicDetailController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/TopicDetailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
+            <state relative-caret-position="-698">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForumAllController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/ForumAllController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionType.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="SessionValidateFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionValidateFilter.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="SysContent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SysContent.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="NeedSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/NeedSession.java">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="SessionAOP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionAOP.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="50" column="64" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="64" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="SessionController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/SessionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionValidateFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionValidateFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysContent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SysContent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -76,7 +69,7 @@
       <file leaf-file-name="ForumAllDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/dao/ForumAllDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="690">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,7 +81,7 @@
       <file leaf-file-name="ForumAllService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/service/ForumAllService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
+            <state relative-caret-position="1365">
               <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -116,7 +109,6 @@
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/model/Topic.java" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/model/TopicDetail.java" />
-        <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/TopicDetailController.java" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/dao/Topicdao.java" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/resources/mybatis/mapper/TopicDetailMapper.xml" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/service/TopicService.java" />
@@ -125,9 +117,12 @@
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/model/TopicIndex.java" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/dao/ForumAllDao.java" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/service/ForumAllService.java" />
-        <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/ForumAllController.java" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionAOP.java" />
         <option value="$PROJECT_DIR$/eg-forum-impl/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/TopicDetailController.java" />
+        <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/ForumAllController.java" />
+        <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionValidateFilter.java" />
+        <option value="$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/SessionController.java" />
       </list>
     </option>
   </component>
@@ -154,7 +149,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="815" />
     <option name="height" value="560" />
@@ -165,6 +160,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,6 +209,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eg-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eg-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="eg-forum-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eg-forum" type="b2602c69:ProjectViewProjectNode" />
@@ -270,19 +277,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eg-portal" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\IdeaProjects\everythinggrwows\eg-forum\eg-forum-impl\src\main\webapp" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-forum\eg-forum-impl\src\main\java\cn\everythinggrows\forum" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-forum\eg-forum-impl\src\main\resources\mybatis\mapper" />
       <recent name="I:\IdeaProjects\everythinggrwows\eg-forum\eg-forum-impl\src\main" />
@@ -355,15 +361,16 @@
       <option name="presentableId" value="Default" />
       <updated>1552197693206</updated>
       <workItem from="1552197700167" duration="17285000" />
-      <workItem from="1552272712519" duration="16398000" />
+      <workItem from="1552272712519" duration="17687000" />
+      <workItem from="1552364484856" duration="1428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33683000" />
+    <option name="totallyTimeSpent" value="36400000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -381,7 +388,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26340482" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22319035" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -406,6 +413,36 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/TopicDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/dao/ForumAllDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/service/ForumAllService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/resources/spring/applicationContext-service.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -447,9 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,9 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -570,9 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="712">
           <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,20 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,30 +706,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/TopicDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://I:/apps/applications/apache-maven-3.5.3/apache-maven-3.5.3/commons-lang/commons-lang/2.1/commons-lang-2.1.jar!/org/apache/commons/lang/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="614" column="45" selection-start-line="614" selection-start-column="43" selection-end-line="614" selection-end-column="45" />
-          <folding>
-            <element signature="e#17796#17797#0" expanded="true" />
-            <element signature="e#17851#17852#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/dao/ForumAllDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="690">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -725,7 +725,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/service/ForumAllService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
+        <state relative-caret-position="1365">
           <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -733,35 +733,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="48" column="53" lean-forward="true" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/ForumAllController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionType.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/TopicDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-698">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionValidateFilter.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SysContent.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/NeedSession.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/aop/SessionAOP.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        <state relative-caret-position="525">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/webapp/error.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eg-forum-impl/src/main/java/cn/everythinggrows/forum/controller/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
