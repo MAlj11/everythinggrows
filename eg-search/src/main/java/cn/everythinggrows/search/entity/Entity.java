@@ -5,11 +5,11 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 
-@Document(indexName = "Article",type = "entity", shards = 1,replicas = 0, refreshInterval = "-1")
+@Document(indexName = "product", type = "article")
 public class Entity {
 
     @Id
-    private Long id;
+    private String id;
     @Field
     private String title;
     @Field
@@ -17,11 +17,11 @@ public class Entity {
     @Field
     private String createAt;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
