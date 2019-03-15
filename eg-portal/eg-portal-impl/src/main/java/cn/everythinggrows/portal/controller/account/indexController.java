@@ -39,8 +39,9 @@ public class indexController {
   private ArticleDetailService articleDetailService;
 
     @Value("${BASE_URL_BLOG}")
-
     String BASE_URL_BLOG;
+    @Value("BASE_URL_FORUM")
+    String BASE_URL_FORUM;
 
     @RequestMapping("/sindex.html")
     public String getIndex(){

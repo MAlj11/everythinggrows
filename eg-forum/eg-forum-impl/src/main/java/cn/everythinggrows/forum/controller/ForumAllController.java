@@ -6,6 +6,7 @@ import cn.everythinggrows.forum.service.ForumAllService;
 import cn.everythinggrows.user.model.egUser;
 import cn.everythinggrows.user.service.IUserAccount;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -16,6 +17,9 @@ public class ForumAllController {
     private ForumAllService forumAllService;
     @Autowired
     private IUserAccount iUserAccount;
+
+    @Value("BASE_URL_SEARCH")
+    String BASE_URL_SEARCH;
 
     /**
      * 查询论坛所有话题
