@@ -1,4 +1,4 @@
-package cn.everythinggrows.search;
+package cn.everythinggrows.cn.eg.search;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
