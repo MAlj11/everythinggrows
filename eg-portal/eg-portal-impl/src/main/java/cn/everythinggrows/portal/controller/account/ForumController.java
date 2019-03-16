@@ -34,8 +34,6 @@ public class ForumController {
             topicIndices = (List<TopicIndex>) typeArticleMap.get("articleWithTypeList");
         }
         session.setAttribute("topicIndices",topicIndices);
-
-        //todo 前端页面，写好后将所有话题塞到里面
-        return "lw-Photography";
+        return "lw-forum";
     }
 }

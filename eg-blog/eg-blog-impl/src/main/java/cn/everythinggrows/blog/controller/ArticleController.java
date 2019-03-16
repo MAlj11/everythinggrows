@@ -2,6 +2,7 @@ package cn.everythinggrows.blog.controller;
 
 
 import cn.everythinggrows.base.egResponse;
+import cn.everythinggrows.blog.aop.NeedSession;
 import cn.everythinggrows.blog.dao.IndexDao;
 import cn.everythinggrows.blog.dao.TypeArticleDao;
 import cn.everythinggrows.blog.dao.UidArticleDao;
@@ -11,10 +12,7 @@ import cn.everythinggrows.blog.model.EgTypeArticle;
 import cn.everythinggrows.blog.model.egArticle;
 import cn.everythinggrows.blog.model.egUidArticle;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.JedisCluster;
 
 import java.time.LocalDate;
@@ -34,13 +32,15 @@ public class ArticleController {
     @Autowired
     private JedisCluster jedisCluster;
 
-    @RequestMapping(value = "blog/article/insert",method = RequestMethod.POST)
-    public egResponse InsertArticle(@RequestParam(defaultValue = "") String articleName,
-                                    @RequestParam() long uid,
-                                    @RequestParam(defaultValue = "") String content,
-                                    @RequestParam(defaultValue = "") String coverPic,
-                                    @RequestParam(defaultValue = "1") int type,
-                                    @RequestParam(defaultValue = "") String title){
+    @RequestMapping(value = "/blog/article/insert",method = RequestMethod.POST)
+    @NeedSession
+    public egResponse InsertArticle(@RequestParam(value = "articleName",defaultValue = "") String articleName,
+                                    @RequestParam(value = "content",defaultValue = "") String content,
+                                    @RequestParam(value = "coverPic",defaultValue = "") String coverPic,
+                                    @RequestParam(value = "type",defaultValue = "1") int type,
+                                    @RequestParam(value = "title",defaultValue = "") String title,
+                                    @RequestHeader(value = "x-eg-session") String session){
+        long uid = getUid(session);
         egArticle egArticle = new egArticle();
         long aid = RedisDao.aidGeneration();
         Calendar calendar=Calendar.getInstance();
@@ -81,5 +81,14 @@ public class ArticleController {
         //增加文章事件
         IndexArticleEvent.IndexArticleScore(aid,1);
         return egResponse.OK;
+    }
+
+    public long getUid(String session){
+        if(session == null || session.length() == 0){
+            return 0;
+        }
+        String[] line = session.split(";");
+        long uid = Long.parseLong(line[0]);
+        return uid;
     }
 }

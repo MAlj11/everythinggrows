@@ -62,7 +62,7 @@ public class TopicDetailController {
     public egResponse inseretTopicDetail(@Context HttpServletRequest request,
                                          @RequestParam(value = "tid",defaultValue = "0") long tid,
                                          @RequestParam(value = "content",defaultValue = "") String content,
-                                         @RequestHeader(value = "EG-SESSION") String session){
+                                         @RequestHeader(value = "x-eg-session") String session){
 
 //        String token = String.valueOf(uid) + ";" + uuid;
         long uid = getUid(session);
